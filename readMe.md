@@ -15,7 +15,7 @@ npm install m6numo
 ## Import
 
 ```javascript
-import { m6NmO } from "m6nmo";
+import * as m6numo from "m6numo";
 ```
 
 ## Create an instance

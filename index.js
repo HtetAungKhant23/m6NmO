@@ -1,5 +1,5 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-const { sharpMan } = require("sharp");
+const { sharp } = require("sharp");
 
 /**
  * @class
@@ -37,7 +37,7 @@ class m6NmO {
    */
   async uploadFile(fileBuffer, fileName, mimetype) {
     const buffer = Buffer.from(fileBuffer.data);
-    const img = await sharpMan(buffer)
+    const img = await sharp(buffer)
       .resize({ height: 720, width: 1280, fit: "contain" })
       .toBuffer();
     const uploadParams = {

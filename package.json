@@ -1,6 +1,6 @@
 {
   "name": "m6numo",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "s3 service for homies",
   "main": "index.js",
   "scripts": {
