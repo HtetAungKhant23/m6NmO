@@ -1,0 +1,28 @@
+{
+  "name": "m6numo",
+  "version": "1.0.0",
+  "description": "s3 service for homies",
+  "main": "index.js",
+  "scripts": {
+    "test": "for homies"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HtetAungKhant23/m6NmO.git"
+  },
+  "keywords": [
+    "s3",
+    "for",
+    "homies"
+  ],
+  "author": "htetaungkhant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HtetAungKhant23/m6NmO/issues"
+  },
+  "homepage": "https://github.com/HtetAungKhant23/m6NmO#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.501.0",
+    "sharp": "^0.33.2"
+  }
+}
