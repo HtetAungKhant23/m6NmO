@@ -1,6 +1,6 @@
 {
   "name": "m6numo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "s3 service for homies",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/HtetAungKhant23/m6NmO#readme",
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.501.0",
-    "sharp": "^0.33.2"
+    "@aws-sdk/client-s3": "^3.501.0"
   }
 }

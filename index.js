@@ -1,5 +1,4 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-const { sharp } = require("sharp");
 
 /**
  * @class
@@ -36,13 +35,13 @@ class m6NmO {
    * @returns {Promise<Object>} - A promise that resolves to the result of the S3 upload operation.
    */
   async uploadFile(fileBuffer, fileName, mimetype) {
-    const buffer = Buffer.from(fileBuffer.data);
-    const img = await sharp(buffer)
-      .resize({ height: 720, width: 1280, fit: "contain" })
-      .toBuffer();
+    // const buffer = Buffer.from(fileBuffer.data);
+    // const img = await sharp(buffer)
+    //   .resize({ height: 720, width: 1280, fit: "contain" })
+    //   .toBuffer();
     const uploadParams = {
       Bucket: this.bucketName,
-      Body: img,
+      Body: fileBuffer,
       Key: fileName,
       ContentType: mimetype,
     };
